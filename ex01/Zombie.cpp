@@ -6,15 +6,14 @@
 /*   By: joaocard <joaocard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 11:26:04 by joaocard          #+#    #+#             */
-/*   Updated: 2024/07/23 13:45:21 by joaocard         ###   ########.fr       */
+/*   Updated: 2024/07/23 14:54:07 by joaocard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void	Zombie::SetName(void){
-	std::cout << "Enter name: " << std::endl;
-	std::getline(std::cin, Zombie::_name);
+void	Zombie::SetName(std::string name){
+		_name = name;
 }
 
 void	Zombie::announce(void) {
